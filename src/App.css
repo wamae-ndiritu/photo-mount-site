@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-main: #fc0f3e;
+    --color-loading: #ee748c;
+    --color-secondary: #a311ad;
+    --color-background: #ffffff;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #808080;
+    --color-yellow: #f7a40bf1;
+    --footer-color: black;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    /* background-color: hsla(239, 67%, 49%, 0.226); */
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+    margin: 4px 0 0 0;
+}
+
+li{
+    color: var(--color-gray);
+    font-size: .9rem;
+}
+
+li a, li p{
+    text-decoration: none;
+    color: #000000;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+    color: var(--color-black);
+    font-size: .9rem; 
+}
+
+/*----------------Header-------------------*/
+
+.header{
+    display: flex;
+    height: 12vh;
+    background: var(--color-background);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-cont{
+    width: 12rem;
+}
+
+.logo-cont img{
+    width: 100%;
+}
+.menubar-cont {
+    display: flex;
+}
+
+.menubar-cont ul {
+    display: flex;
+    align-items: center;
+}
+
+.menubar-cont ul li{
+    padding: 0 10px;
+    font-size: 0.9rem;
+}
+
+.menubar-cont ul li Link p{
+    color: #000000;
+}
+
+.menubar-cont ul li a:hover{
+    border-bottom: 3px solid var(--color-main);
+    color: #000000;
+}
+
+.menubar-cont ul li p:hover{
+    color: #000000;
+    margin-bottom: -3px;
+
+}
+
+.btn-main{
+    padding: 10px;
+    background-color: var(--color-main);
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 10px;
+}
+
+
+.z-index{
+    z-index: 999;
+}
+
+
+/*----------------Heroe section-------------------*/
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 65vh;  
+}
+
+.service-section{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.guarantee-sect{
+    display: flex;
+
+}
+
+.guarantee-sect img{
+    width: 14rem;
+    height: 10rem;
+}
+.right-sect{
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+
+.slider{
+    width: 98%;
+    height: 50vh;
+    margin: 0 0 0 10px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 50vh;
+}
+
+.slogan{
+    margin: 10px;
+}
+
+.slogan h2{
+    color: var(--color-main);
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+}
+.icon{
+    color: var(--color-main);
+    font-size: 1.2rem !important;
+    margin-right: 8px;
+}
+
+/*----------------Services section-------------------*/
+
+.title, .title-2 h1{
+    color: var(--color-main);
+    font-family: 'Caveat', cursive;
+}
+
+.title h1 {
+    color: var(--color-main);
+    font-family: 'Caveat', cursive;
+}
+.title-2 h1{
+    font-size: 1.2rem;
+}
+
+.title hr {
+    width: 10%;
+    color: var(--color-secondary);
+    transform: translateX(450%);
+    margin-top: -10px;
+}
+
+.title-2 hr{
+    width: 10%;
+    color: var(--color-secondary);
+    transform: translateX(450%);
+    margin-top: -10px;
+}
+
+.text-line{
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.price{
+    font-weight: 700;
+}
+
+/*--------------------Distinguished services-----------------------*/
+
+.text-main, .mount-info p{
+    font-weight: 200;
+    padding: 3px;
+    color: var(--color-gray);
+}
+
+/*--------------------Call to action section-----------------------*/
+.action-sect{
+    width: 100%;
+    display: flex;
+    height: 40vh;
+    background-color: aliceblue;
+}
+
+.advert-img{
+    display: flex;
+    flex: 2;
+}
+
+.advert-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.advert-info{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.advert-info p{
+    color: #000000;
+    font-size: 1.4rem;
+    /* font-family: 'Caveat', cursive; */
+    padding: 0 10px 0 0;
+    text-transform: uppercase;
+}
+
+.btn-advert{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: var(--color-yellow);
+    transition: ease-in .9s;
+}
+
+.btn-advert:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.arrow-icon{
+    font-size: 1.9rem !important;
+}
+
+
+/*--------------------footer section-----------------------*/
+
+.footer{
+    margin: 0 auto;
+    background-color: #000000cb;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo img{
+    width: 150px;
+    object-fit: contain;
+}
+
+.footer-logo .footer-location-text p{
+    padding-left: 3px;
+}
+
+.mail-input{
+    border:none; 
+    border-radius: 30px;
+    background-color: var(--footer-color);
+    border-bottom: 1px #000000 solid;
+    padding: 0 20px 0 10px;
+}
+
+.mail-input:focus{
+   outline: none;
+}
+
+.button-cont{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.btn-main-1{
+    background-color: var(--color-main);
+    width: 100px;
+    border-radius: 20px;
+    margin: 7px 0;
+    color: var(--color-white);
+}
+
+.social-icons{
+    display: flex;
+}
+
+.footer-social-icon{
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+.footer-social-icon:hover{
+    cursor: pointer;
+}
+
+.footer-location-text p{
+    color: #ffffff;
+}
+
+.footer-titles{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer-titles i{
+    color: #ffffff;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+/* ------------------------Contacts------------------------------- */
+
+.form input{
+    width: 70%;
+    padding: 10px 10px;
+}
+
+.title-heading{
+    color: var(--color-gray);
+    text-transform: uppercase;
+    font-size: 1.0rem;
+}
+
+.handle-text{
+    color: var(--color-gray);
+    font-size: 14px;
+}
+
+.contact-icon{
+    padding-right: 7px;
+    color: #000000;
+}
+
+.submit-btn{
+    background-color: var(--color-main);
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.h-title{
+    color: var(--color-black);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+/* ------------------------Product Deatils------------------- */
+
+.image-cont{
+    width: 250px;
+    height: 300px;
+}
+
+.image-cont img{
+    width: 100%;
+    height: 100%;
+}
+
+.price-title{
+    color: var(--color-main);
+    padding: 3px 0;
+}
+
+.spaced-cont{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.select{
+    width: 80px;
+}
+
+.order-text{
+    color: var(--color-gray);
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.info p{
+    color: var(--color-gray);
+        font-size: .9rem;
+}
+
+.small-input{
+    width: 100%;
+}
+
+/* ------------------Account----------------- */
+
+.sign-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-div{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sign-div input{
+    width: 100%;
+}
+
+.sign-but-toggle{
+    display: flex;
+    justify-content: center;
+}
+
+.sign-but-toggle h6{
+    border: 1px solid #000000;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+    text-transform: uppercase;
+    margin: 0 .2px;
+}
+
+.sign-but-toggle .active{
+    background-color: var(--footer-color);
+    color: var(--color-black);
+}
+
+.eye-icon{
+    color: black;
+    font-size: 16px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* ----------------CART----------------- */
+
+.cart-image-cont{
+    width: 100px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.cart-image-cont img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.cart-table{
+    width: 98%;
+}
+
+.cart-table-row th{
+    color: var(--color-gray);
+    font-size: .7rem;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.cart-qty{
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.table-row{
+    margin-bottom: 5px !important;
+}
+
+.cart-text-title{
+    color: var(--color-gray);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.cart-text{
+    color: var(--color-gray);
+    font-size: 14px;
+    padding: 0 3px;
+}
+
+.size-text{
+    color: plum;
+}
+
+.price-text{
+    color: var(--color-black);
+    font-size: 14px;
+}
+
+.total-cont{
+    height: 35vh;
+}
+
+.delete-icon{
+    padding-right: 3px;
+    font-size: 12px;
+    color: red;
+    cursor: pointer;
+}
+
+.qty-icon{
+    cursor: pointer;
+    color: #000000;
+}
+
+/* ----------CHECKOUT----------- */
+
+.checkout-text{
+    color: var(--color-gray);
+    font-size: 12px;
+    padding: 0;
+}
+
+.loading-btn{
+    background-color: var(--color-loading);
+    color: #ffffff;
+    padding: 8px 5px;
+    border-radius: 7px;
+    width: 80%;
+    cursor: not-allowed;
+
+}
+
+.uploaded-img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.uploaded-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.badge-cont{
+    position: relative;
+}
+
+
+.badge{
+    position: absolute;
+    border-radius: 50%;
+    color: #fc02fc;
+    font-size: 14px;
+    top: -9px;
+    left: 2px;
+}
+
+/* ---------------------PlaceOrderPage------------------- */
+.order-info-sect{
+    background-color: aliceblue;
+    margin-top: -10px;
+}
+.user-info-cont{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 0 10px;
+}
+
+.user-info-cont img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+
+}
+
+.user-info-text{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-desc-text{
+    flex-direction: column;
+}
+
+/* ------------------DASHBOARD------------------- */
+
+.dash-container{
+    display: flex;
+}
+
+.dash-sidebar{
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.dash-main{
+    display: flex;
+    flex: 4;
+    background-color: gray;
+}
+
+.dash-logo{
+    width: 150px;
+    margin: 20px 10px;
+}
+
+.dash-logo h6{
+    text-align: center;
+}
+
+.dash-logo img{
+    width: 100%;
+}
+
+.dash-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px 0;
+
+}
+
+.dash-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dash-link:hover{
+    color: green;
+    background-color: #ffffff;
+    padding: 15px auto;
+    
+}

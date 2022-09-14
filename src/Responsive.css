@@ -1,0 +1,169 @@
+:root {
+    --color-main: #fc0f3e;
+    --color-secondary: #a311ad;
+    --color-background: #ffffff;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray: #808080;
+    --color-yellow: #f7a40bf1;
+    --footer-color: #D3D3D3;
+    --gray-hover: #f6f6f6;
+}
+
+@media (min-width: 768.75px){
+
+    .menu-icon .bg-icon{
+        display: none;
+    }
+
+    .details-cont-md{
+        padding-right: 20px;
+    }
+    .card{
+        margin: 0 10px;
+    }
+    
+}
+
+@media (max-width: 768.75px){
+    .logo-cont {
+            width: 8rem;
+        }
+
+    .small-btn-main{
+        padding: 4px;
+    }
+
+    .menu-icon{
+        margin-right: 0;
+    }
+
+    .bg-icon{
+        font-size: 2.4rem !important;
+    }
+
+    .hide-menu {
+        display: none !important;
+        position: absolute;
+        background-color: var(--color-background);
+        z-index: 999;
+        top: 100px;
+        right: 12px;
+        left: 12px;
+    }
+    
+    .hide-menu li {
+        padding: 14px 0;
+        margin: 5px 0;
+    }
+    
+    .hide-menu li:hover {
+        background-color: var(--gray-hover);
+    }
+
+    .show-menu{
+        display: block !important;
+    }
+
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .service-section {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+    .right-sect{
+        flex: 1;
+    }
+
+    .slider{
+        height: 30vh;
+    }
+    .carousel-item img{
+        height: 30vh;
+    }
+
+    .guarantee-sect{
+        display: flex;
+        justify-content: center;
+    }
+
+    .action-sect{
+        height: 40vh;
+    };
+
+    .advert-img {
+        height: 30vh;
+    }
+
+    .advert-info p{
+        font-size: 1.0rem;
+        padding: 0 6px 0 0;
+    }
+
+    .btn-advert{
+        width: 8.6rem;
+    }
+
+    .footer-logo img{
+        width: 8rem;
+    }
+
+    .button-cont{
+        margin-bottom: 10px;
+    }
+
+    .btn-main-1{
+        width: 120px;
+    }
+
+    .header-icon-sm{
+        margin-right: 10px;
+    }
+
+}
+
+@media (min-width: 568.75px){
+    .card{
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 400px){
+    .make-order{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-text{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .cart-text-title{
+        padding-left: 5px;
+    }
+
+    .small-input{
+        width: 80%;
+    }
+
+    .order-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .user-info-cont{
+        margin: 10px 0;
+    }
+
+    .right-sect{
+        margin-left: -10px;
+    }
+
+
+}
